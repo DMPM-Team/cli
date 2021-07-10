@@ -22,7 +22,7 @@ namespace DMPackageManager.CLI {
                     Console.WriteLine("dmpm add <package> - Add a package to the project");
                     Console.WriteLine("dmpm remove <package> - Remove a package from the project");
                     Console.WriteLine("dmpm check [package] - Check one (or all) package for updates");
-                    Console.WriteLine("dmpm update [package] - Updates one (or all) package to its latest version");
+                    Console.WriteLine("dmpm update [package] - Update one (or all) package to its latest version");
                     Console.WriteLine("dmpm install - Installs all packages required by this project");
                     Console.WriteLine("");
                     Console.WriteLine("Key: <required_argument> [optional_argument]");       
