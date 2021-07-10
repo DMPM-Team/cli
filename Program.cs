@@ -10,6 +10,7 @@ namespace DMPackageManager.CLI {
             Console.WriteLine(String.Format("DMPM CLI - v{0}", dmpm_version));
             if(args.Length == 0) {
                 Console.WriteLine("Run 'dmpm help' for a list of commands");
+                Environment.Exit(1); // This technically wasnt a valid run
             }
         }
     }
