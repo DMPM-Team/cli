@@ -27,6 +27,21 @@ namespace DMPackageManager.CLI {
                     Console.WriteLine("");
                     Console.WriteLine("Key: <required_argument> [optional_argument]");       
                     break;
+                case "init":
+                    if(args.Length >= 2) {
+                        if(args[1] == "-f") {
+                            // They forced it
+                            ProjectInitialiser.SetupProject(true);
+                        } else {
+                            // Do it normally
+                            ProjectInitialiser.SetupProject();
+                        }
+                    } else {
+                        // No extra args. Do it normally
+                        ProjectInitialiser.SetupProject();
+                    }
+                    break;
+                    
                 default:
                     Console.WriteLine("Unknown command. Run 'dmpm help' for a list of commands");
                     break;
